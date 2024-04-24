@@ -1,0 +1,21 @@
+@import './scss/variables.scss';
+
+:root {
+  font-family: $mainFont;
+  font-synthesis: none;
+  height: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+  background-image: url(./assets/fondosRedes.jpg);
+  background-repeat:repeat;
+  background-size:cover;
+  background-position: center center;
+}

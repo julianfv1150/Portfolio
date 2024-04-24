@@ -1,0 +1,50 @@
+@import './scss/variables.scss';
+@import './scss/globals.scss';
+
+#root {
+  height: 100%;
+  padding: .75rem;
+  display: grid;
+  gap: .5rem;
+  color: $mainColor;
+  align-items: center;
+  justify-items: center
+}
+
+.containerLarge{
+  @extend .container;
+  grid-column: 1 / 3;
+  max-width: $componentWidth * 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center
+}
+.containerVertical{
+  @extend .container;
+}
+
+@media only screen and (max-width:$breakpointSM) {
+  #root{
+    grid-template-columns: 1fr;
+  }
+  .containerLarge{
+    grid-column: 1 / 2;
+    max-width: $componentWidth;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width:$breakpointMD) {
+  #root{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+  @media only screen and (min-width:$breakpointLG) {
+  #root{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .containerVertical{
+    grid-column: 3 / 4;
+  }
+}
+

@@ -16,11 +16,32 @@ const plains = [
     },
     {
         section:"Habilidades duras",
-        techs:["none"]                      //TODO COMPLETAR CON ARRREGLO DE TECNOLOGÏAS
+        techs:[
+            "src/assets/node-js.svg",
+            "src/assets/express.svg",
+            "src/assets/mongodb.svg",
+            "src/assets/mongoose.svg",
+            "src/assets/sequelize.svg",
+            "src/assets/sql.svg",
+            "src/assets/swagger.svg",
+            "src/assets/typescript.svg",
+            "src/assets/react-js.svg",
+            "src/assets/vite.svg",
+            "src/assets/css3.svg",
+            "src/assets/html-5.svg",
+            "src/assets/trello.svg",
+            "src/assets/jira.svg",
+        ]
     },
     {
-        section:"Habilidades duras",
-        description:"none" ,
+        section:"Habilidades blandas",
+        description:
+            `Como profesional, me distingo por mi capacidad para trabajar en equipo. 
+            Soy capaz de entender las necesidades de los demás y encontrar soluciones 
+            colaborativas. Mi capacidad para adaptarme a nuevos desafíos me permiten 
+            enfrentar cualquier situación con confianza y determinación. Además, mi 
+            pasión por el aprendizaje continuo me ayudan a mantenerme motivado y 
+            comprometido en todo momento.`,
     },
     {
         section:"mis proyectos",

@@ -5,10 +5,8 @@
   height: 100%;
   padding: .75rem;
   display: grid;
-  gap: .5rem;
+  gap: 1rem;
   color: $mainColor;
-  align-items: center;
-  justify-items: center
 }
 
 .containerLarge{
@@ -17,8 +15,6 @@
   max-width: $componentWidth * 2;
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-items: center
 }
 .containerVertical{
   @extend .container;
@@ -37,6 +33,9 @@
 @media only screen and (min-width:$breakpointMD) {
   #root{
     grid-template-columns: repeat(2, 1fr);
+  }
+  .noRow{
+    flex-direction: column
   }
 }
   @media only screen and (min-width:$breakpointLG) {

@@ -5,7 +5,7 @@ const About = () => {
     return (
         <>
             <img src={imgPerfil} alt='imgPerfil' width='250px'/>
-            <PlainText title="Sobre mí" />
+            <PlainText  title="Sobre mí" />
         </>
     )
 }

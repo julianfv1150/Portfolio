@@ -14,7 +14,6 @@ img{
 
 @mixin wrapper{
     background-color: $wrapperColor;
-    border: 1px solid darkgray;
     border-radius: 25px;
     padding: 1rem 1rem;
 }
@@ -22,6 +21,8 @@ img{
 .container{
     @include wrapper;
     max-width: $componentWidth;
+    // align-items: center;
+    // justify-items: center
 }
 
 a{

@@ -12,7 +12,7 @@ function App() {
       <div className='containerLarge'><About /></div>
       <div className='containerVertical'><HardSkill title='Habilidades duras' /></div>
       <div className='containerVertical'><SoftSkill /></div>
-      <div className='containerLarge'>Projects</div>
+      <div className='containerLarge' id='project'>Projects</div>
       <div className='containerLarge noRow'><Comment /></div>
       <div className='containerVertical'><Contact /></div>
     </>

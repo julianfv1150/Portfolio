@@ -5,7 +5,7 @@
   height: 100%;
   padding: .75rem;
   display: grid;
-  gap: 1rem;
+  gap: 2em;
   color: $mainColor;
 }
 
@@ -44,6 +44,9 @@
   }
   .containerVertical{
     grid-column: 3 / 4;
+  }
+  #project{
+    grid-row: 2 / 3;
   }
 }
 

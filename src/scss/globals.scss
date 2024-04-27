@@ -1,8 +1,9 @@
 @import 'variables.scss';
 
 p{
-    font-size: .7em;
+    font-size: .8em;
     color: $mainColor;
+    line-height: 1.5em;
 }
 
 li{
@@ -21,8 +22,8 @@ img{
 .container{
     @include wrapper;
     max-width: $componentWidth;
-    // align-items: center;
-    // justify-items: center
+    align-items: center;
+    justify-items: center
 }
 
 a{

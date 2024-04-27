@@ -4,15 +4,15 @@ const plains = [
         description: 
             `¡Hola! Soy Julian Vega, un apasionado desarrollador full stack con 31 años de edad.
             Recientemente he completado mi formación en SoyHenry, especializándome en tecnologías 
-            como JavaScript, PostgreSQL, React, HTML, CSS y Sequelize.
+            como JavaScript, PostgreSQL, React, HTML, CSS y Sequelize.\n
             Mi misión es ofrecer soluciones innovadoras y eficientes a través del desarrollo de 
             software. Me entusiasma la idea de contribuir al avance tecnológico y la integración 
-            continua de la sociedad con el mundo digital.        
-            Estoy emocionado por las oportunidades que el futuro tiene reservadas y espero poder 
-            colaborar en proyectos que impulsen el cambio y mejoren la experiencia humana en el 
-            ámbito tecnológico.
+            continua de la sociedad con el mundo digital.\n       
             ¡Conéctate conmigo y exploremos cómo podemos trabajar juntos para alcanzar nuestros 
             objetivos!`
+            //Estoy emocionado por las oportunidades que el futuro tiene reservadas y espero poder 
+            //colaborar en proyectos que impulsen el cambio y mejoren la experiencia humana en el 
+            //ámbito tecnológico.
     },
     {
         section:"Habilidades duras",
@@ -36,12 +36,11 @@ const plains = [
     {
         section:"Habilidades blandas",
         description:
-            `Como profesional, me distingo por mi capacidad para trabajar en equipo. 
-            Soy capaz de entender las necesidades de los demás y encontrar soluciones 
+            `Soy capaz de entender las necesidades de los demás y encontrar soluciones 
             colaborativas. Mi capacidad para adaptarme a nuevos desafíos me permiten 
-            enfrentar cualquier situación con confianza y determinación. Además, mi 
-            pasión por el aprendizaje continuo me ayudan a mantenerme motivado y 
-            comprometido en todo momento.`,
+            enfrentar cualquier situación con confianza. Además, mi pasión por el 
+            aprendizaje continuo me ayudan a mantenerme al día.`,
+            //Como profesional, me distingo por mi capacidad para trabajar en equipo.
     },
     {
         section:"mis proyectos",
@@ -82,10 +81,8 @@ const plains = [
         description:
             `Déjame un comentario si has encontrado algo interesante, alguna recomendación, 
             un proyecto que te gustaría ver en mi portfolio, un bug que deba solucionar, o 
-            lo que creas que me puede ayudar a mejorar. Las críticas constructivas son 
-            bienvenidas, anímate a contribuir!
-            Puedes estar seguro que no se verá tu comentario ni tus datos personales en el sitio 
-            ya que no se registran, sólo se envían por mail.`
+            lo que creas que me puede ayudar a mejorar, anímate a contribuir!
+            Los comentarios no se reflejan en el sitio ya que no se registran, se envían por mail.`
     }
 ]
 

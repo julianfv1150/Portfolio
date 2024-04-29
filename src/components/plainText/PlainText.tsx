@@ -3,6 +3,7 @@ import plains from "../../utils/plains"
 import { trimmerText } from '../../utils/trimmerText'
 import { useEffect, useState } from 'react'
 import Swal from 'sweetalert2'
+import { Link } from 'react-router-dom'
 
 const PlainText = ({title} : {title: string}) => {
     
@@ -35,15 +36,11 @@ const PlainText = ({title} : {title: string}) => {
             {data?.country ? <h4>🌎: {data?.country}</h4> : null}
             {data?.UTC ? <h4>🕘: {data?.UTC}</h4> : null}
             {data?.mobile ? <h4>📱: {data?.mobile}</h4> : null}
-            {data?.portfolio ? <a href={data?.portfolio}>💼</a> : null}
-            {data?.whatsapp ? <a href={data?.whatsapp}>WSP</a> : null}
-            <div>{data?.social?.map((elem, index) =>
-                    (<ul key={index}>
-                        <li>{elem.name}:{elem.link}</li>
-                    </ul>)    
-                )}
+            <div>
+                {data?.social?.map((elem) =>
+                    (<Link to={`${elem.link}`} key={elem.name}><img src={elem.icon} alt={elem.name} width='50px' /></Link>))
+                }
             </div>
-
         </div>
     )
 }

@@ -1,11 +1,16 @@
 @import 'variables.scss';
+@import 'sweetalert2/src/sweetalert2.scss';
 
 p{
     font-size: .8em;
     color: $mainColor;
     line-height: 1.5em;
+    text-align: justify
 }
 
+h2{
+    color:aquamarine;
+}
 li{
     font-size: .8em;
 }
@@ -50,3 +55,15 @@ ul{
 li{
     text-decoration: none;
 }
+
+
+.swal2-modal{
+    color:white;
+    border-radius: 25px;
+    background-color: rgb(000, 000, 000);
+}
+
+.swal2-html-container {
+    text-align: justify !important;
+  }
+

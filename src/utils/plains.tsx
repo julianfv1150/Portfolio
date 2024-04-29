@@ -17,20 +17,62 @@ const plains = [
     {
         section:"Habilidades duras",
         techs:[
-            "assets/node-js.svg",
-            "assets/express.svg",
-            "assets/mongodb.svg",
-            "assets/mongoose.svg",
-            "assets/sequelize.svg",
-            "assets/sql.svg",
-            "assets/swagger.svg",
-            "assets/typescript.svg",
-            "assets/react-js.svg",
-            "assets/vite.svg",
-            "assets/css3.svg",
-            "assets/html-5.svg",
-            "assets/trello.svg",
-            "assets/jira.svg",
+            {
+                name: 'node',
+                icon: "assets/node-js.svg",
+            },
+            {
+                name: 'express',
+                icon: "assets/express.svg",
+            },
+            {
+                name: 'mongoDb',
+                icon: "assets/mongodb.svg",
+            },
+            {
+                name: 'mongoose',
+                icon: "assets/mongoose.svg",
+            },
+            {
+                name: 'sequelize',
+                icon: "assets/sequelize.svg",
+            },
+            {
+                name: 'sql',
+                icon: "assets/sql.svg",
+            },
+            {
+                name: 'swagger',
+                icon: "assets/swagger.svg",
+            },
+            {
+                name: 'typescript',
+                icon: "assets/typescript.svg",
+            },
+            {
+                name: 'react',
+                icon: "assets/react-js.svg",
+            },
+            {
+                name: 'vite',
+                icon: "assets/vite.svg",
+            },
+            {
+                name: 'css3',
+                icon: "assets/css3.svg",
+            },
+            {
+                name: 'html5',
+                icon: "assets/html-5.svg",
+            },
+            {
+                name: 'trello',
+                icon: "assets/trello.svg",
+            },
+            {
+                name: 'jira',
+                icon: "assets/jira.svg",
+            }            
         ]
     },
     {
@@ -55,25 +97,30 @@ const plains = [
     },
     {
         section:"Contáctame" ,
-        country: "Buenos Aires, ARG",
+        country: "Buenos Aires, \u{1F1E6}\u{1F1F7}",
         UTC: "(UTC -03:00)",
-        whatsapp: "https://wa.me/+5492364267484",
         mobile: "+549 236 4267484",
-        portfolio: "https://julianfv1150.github.io/Portfolio/",
         social: [
             {
+                name: "WhatsApp",
+                icon: "assets/whatsapp.svg",
+                link: "https://wa.me/+5492364267484",
+            },
+            {
                 name: "Google",
-                link: "none"
+                icon: "assets/gmail.svg",
+                link: "https://mail.google.com/"
             },
             {
                 name: "Linkedin",
-                link: "none"
+                icon: "assets/linkedin.svg",
+                link: "https://www.linkedin.com/in/juli%C3%A1n-vega/"
             },
             {
                 name: "GitHub",
-                link: "none"
+                icon: "assets/github.svg",
+                link: "https://github.com/julianfv1150"
             }
-
         ]
     },
     {

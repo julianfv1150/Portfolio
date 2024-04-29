@@ -1,4 +1,3 @@
-import style from './HardSkills.module.scss'
 import plains from "../../utils/plains"
 
 const HardSkill = ({title} : {title : string}) => {
@@ -8,9 +7,10 @@ const HardSkill = ({title} : {title : string}) => {
     return (
         <>
             <h2>{title}</h2>
+            <div className='showIcons'>
             {data?.techs?.map(elem => 
-                (<span key={elem.name} className={style.techs}><img src={elem.icon} alt={elem.name} width='50px' /></span>))
-            }
+                (<img src={elem.icon} key={elem.name}alt={elem.name} width='50px' />))
+            }</div>
         </>
     )
 }

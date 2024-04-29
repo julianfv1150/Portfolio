@@ -9,7 +9,7 @@ p{
 }
 
 h2{
-    color:aquamarine;
+    color: $secondColor;
 }
 li{
     font-size: .8em;
@@ -31,39 +31,30 @@ img{
     justify-items: center
 }
 
-a{
-    display: block;
-    text-decoration: none;
-    cursor: pointer;
-}
-a:link {
-    text-decoration: none;
-    }
-a:visited {
-        text-decoration: none;
-}
-a:hover {
-        text-decoration: underline;
-} 
-a:active {
-        text-decoration: underline;
-}
-
-ul{
-    text-decoration: none;
-}
-li{
-    text-decoration: none;
-}
-
-
 .swal2-modal{
-    color:white;
+    color:$mainColor;
     border-radius: 25px;
     background-color: rgb(000, 000, 000);
 }
 
 .swal2-html-container {
     text-align: justify !important;
-  }
+}
 
+.showIcons{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:flex-end ;
+    height: 75%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+    color: $mainColor;
+    cursor: pointer;
+}
+a:hover{
+    color: $secondColor
+}

@@ -1,5 +1,5 @@
 import PlainText from "../plainText/PlainText";
-import imgPerfil from '../../assets/redes-perfil.png'
+import imgPerfil from '../../assets/social/redes-perfil.png'
 
 const About = () => {
     return (

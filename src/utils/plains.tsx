@@ -1,3 +1,5 @@
+import * as icons from '../assets/index';
+
 const plains = [
     {
         section:"Sobre mí",
@@ -19,60 +21,63 @@ const plains = [
         techs:[
             {
                 name: 'node',
-                icon: "assets/node-js.svg",
+                icon: icons.nodejs,
             },
             {
                 name: 'express',
-                icon: "assets/express.svg",
+                icon: icons.express,
             },
             {
                 name: 'mongoDb',
-                icon: "assets/mongodb.svg",
+                icon: icons.mongodb,
             },
             {
                 name: 'mongoose',
-                icon: "assets/mongoose.svg",
+                icon: icons.mongoose,
             },
             {
                 name: 'sequelize',
-                icon: "assets/sequelize.svg",
+                icon: icons.sequelize,
             },
             {
                 name: 'sql',
-                icon: "assets/sql.svg",
+                icon: icons.sql,
             },
             {
                 name: 'swagger',
-                icon: "assets/swagger.svg",
+                icon: icons.swagger,
             },
             {
                 name: 'typescript',
-                icon: "assets/typescript.svg",
+                icon: icons.typescript,
             },
             {
                 name: 'react',
-                icon: "assets/react-js.svg",
+                icon: icons.reactjs,
             },
             {
                 name: 'vite',
-                icon: "assets/vite.svg",
+                icon: icons.vite,
             },
             {
                 name: 'css3',
-                icon: "assets/css3.svg",
+                icon: icons.css3,
             },
             {
                 name: 'html5',
-                icon: "assets/html-5.svg",
+                icon: icons.html5,
             },
             {
                 name: 'trello',
-                icon: "assets/trello.svg",
+                icon: icons.trello,
             },
             {
                 name: 'jira',
-                icon: "assets/jira.svg",
-            }            
+                icon: icons.jira,
+            }
+            /**
+             * AGREGAR ACÄ PARA SACAR FRAMEWORKS
+             **/         
         ]
     },
     {
@@ -100,25 +105,27 @@ const plains = [
         country: "Buenos Aires, \u{1F1E6}\u{1F1F7}",
         UTC: "(UTC -03:00)",
         mobile: "+549 236 4267484",
+        mail: "julian.f.vega@gmail.com",
+        cv: "https://drive.google.com/file/d/1pul2WttzBZXueV3e5G8L9eDAaDYtZrRw/view?usp=sharing",
         social: [
             {
                 name: "WhatsApp",
-                icon: "assets/whatsapp.svg",
+                icon: icons.whatsapp,
                 link: "https://wa.me/+5492364267484",
             },
             {
                 name: "Google",
-                icon: "assets/gmail.svg",
+                icon: icons.gmail,
                 link: "https://mail.google.com/"
             },
             {
                 name: "Linkedin",
-                icon: "assets/linkedin.svg",
+                icon: icons.linkedin,
                 link: "https://www.linkedin.com/in/juli%C3%A1n-vega/"
             },
             {
                 name: "GitHub",
-                icon: "assets/github.svg",
+                icon: icons.github,
                 link: "https://github.com/julianfv1150"
             }
         ]

@@ -1,3 +1,5 @@
+@import '../../scss/variables.scss';
+
 .content{
     padding: 1em;
 }
@@ -8,5 +10,25 @@
 
 .showModal{
     cursor: pointer;
-    color:aquamarine;
+    color:$secondColor;
 }
+
+h4{
+    // display: inline-block;
+    img{
+        border-radius: 15px;
+        padding: 1px;
+        margin: 0 2px;
+        transition-duration:1s;
+    }
+
+    .imgClicked{
+        background-color: $secondColor;
+        border-radius: 20px;
+        
+        -webkit-box-shadow: .5px 1px 2px rgba(127,255,212,1);
+        -moz-box-shadow: .5px 1px 2px rgba(127,255,212,1);
+        box-shadow: .5px 1px 2px rgba(127,255,212,1);
+    }
+}
+

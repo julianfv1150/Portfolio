@@ -23,6 +23,7 @@
 @media only screen and (max-width:$breakpointSM) {
   #root{
     grid-template-columns: 1fr;
+    padding: 0;
   }
   .containerLarge{
     grid-column: 1 / 2;
@@ -30,17 +31,29 @@
     flex-direction: column;
   }
 }
+
 @media only screen and (min-width:$breakpointMD) {
   #root{
     grid-template-columns: repeat(2, 1fr);
+  }
+  body{
+    margin: 1em;
   }
   .noRow{
     flex-direction: column
   }
 }
-  @media only screen and (min-width:$breakpointLG) {
+@media only screen and (min-width:$breakpointWC) {
+  body{
+    margin: 1em auto;
+  }
+}
+@media only screen and (min-width:$breakpointLG) {
   #root{
     grid-template-columns: repeat(3, 1fr);
+  }
+  body{
+    margin: 0 auto;
   }
   .containerVertical{
     grid-column: 3 / 4;

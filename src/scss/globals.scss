@@ -24,6 +24,11 @@ img{
     padding: 1rem 1rem;
 }
 
+@mixin shadows{
+    -webkit-box-shadow: 1px 2px 4px rgba(127,255,212,1);
+    -moz-box-shadow: 1px 2px 4px rgba(127,255,212,1);
+    box-shadow: 1px 2px 4px rgba(127,255,212,1);
+}
 .container{
     @include wrapper;
     max-width: $componentWidth;
@@ -36,9 +41,15 @@ img{
     border-radius: 25px;
     background-color: rgb(000, 000, 000);
 }
+.colored-toast{
+    border-radius: 25px;
+    color: $secondColor;
+    background-color: rgb(000, 000, 000)!important;
+}
 
 .swal2-html-container {
     text-align: justify !important;
+    background-color: rgb(000, 000, 000);
 }
 
 .showIcons{
@@ -58,3 +69,44 @@ a{
 a:hover{
     color: $secondColor
 }
+
+.formItems{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    margin: 0 auto;
+    padding: 1em;
+    align-items: center;
+    justify-items: left;
+    label{
+        justify-content: right;
+    }
+}
+
+textarea,
+input[type=text], 
+[type=button], 
+[type=submit]{
+    padding: 1em;
+    margin: 1em;
+    border-radius: 25px;
+    color: $secondColor;
+    background-color: black;
+}
+
+input[type=button], [type=submit]{
+    color: black;
+    background-color: $secondColor;
+    border-color: none;
+}
+input[type=button]:hover,
+input[type=submit]:hover{
+    @include shadows;
+}
+
+input[type=text],
+textarea{
+    min-width: 200px;
+}
+textarea{
+    min-height: 80px;
+} 

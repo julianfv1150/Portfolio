@@ -1,11 +1,12 @@
 import PlainText from "../plainText/PlainText";
+import FormComment from "../formComment/FormCommet";
 
 const Comment = () => {
 
     return (
         <>
             <PlainText title="Comentarios" />
-            <h3>FORM</h3>
+            <FormComment />
         </>
     )
 }

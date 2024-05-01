@@ -1,11 +1,13 @@
 export const vpCalculator = (vp : number) => {
 
     let breackPoint : string = '';
-    vp <= 520 
+    vp <= 481 
         ? breackPoint = 'SM' 
-        : vp > 520 && vp < 1000 
+        : vp > 480 && vp < 1025 
             ? breackPoint = 'MD'
-            : breackPoint = 'LG'
+            : vp > 1024 && vp < 1441 
+                ? breackPoint = 'LG'
+                : 'XL'
     
     return breackPoint
 }

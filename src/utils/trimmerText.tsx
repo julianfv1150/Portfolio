@@ -18,7 +18,8 @@ export const trimmerText = (text : string | undefined, vpWidth : number) => {
                     return trimmedSend
                     break;
             default:
-                return 'Tamaño incorrecto'
+                trimmedSend.push(text, '')
+                return trimmedSend
                 break;
         }
     }

@@ -30,6 +30,9 @@
     max-width: $componentWidth;
     flex-direction: column;
   }
+  .formItems{
+    grid-template-columns: 1fr;
+  }
 }
 
 @media only screen and (min-width:$breakpointMD) {

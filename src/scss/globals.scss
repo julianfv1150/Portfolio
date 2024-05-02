@@ -16,12 +16,13 @@ li{
 }
 img{
     max-width: 100%;
+    padding: .5em;
 }
 
 @mixin wrapper{
     background-color: $wrapperColor;
     border-radius: 25px;
-    padding: 1rem 1rem;
+    padding: 1em 1em;
 }
 
 @mixin shadows{

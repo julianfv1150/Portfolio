@@ -1,3 +1,9 @@
+interface formData{
+    email: string,
+    name: string,
+    subject: string,
+    message: string
+}
 const Validates = () => {
     
     const validEmail = (email : string ) => {
@@ -45,7 +51,17 @@ const Validates = () => {
         return 'OK'
     }
 
-    return {validEmail, validName, validSubject, validMessage}
+    const validForm = (formData : formData ) => {
+        if(validEmail(formData.email) === 'OK'){
+            if(validName(formData.name) === 'OK'){
+                if(validSubject(formData.subject) === 'OK'){
+                    if(validMessage(formData.message) === 'OK')
+                        return true
+                }
+            }
+        }
+    }
+    return {validEmail, validName, validSubject, validMessage, validForm}
 }
 
 export default Validates;

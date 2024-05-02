@@ -48,21 +48,24 @@ const FormComment = () => {
     }
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
-        
-        if(SID?.toString && TID?.toString && PK?.toString){
-            emailjs
-                .sendForm(SID, TID, event.currentTarget, {
-                    publicKey: PK,
-                })
-                .then(() => {
-                    showModal('succes', 'Mail enviado con éxito');
-                    setDataEntry({email:'', name: '', subject: '', message: ''})
-                },
-                (error) => {
-                    showModal('warning', 'No hemos podido enviar el email');
-                    console.log(error.text);
-                },
-            );
+        if(Validates().validForm(dataEntry)){
+            if(SID?.toString && TID?.toString && PK?.toString){
+                emailjs
+                    .sendForm(SID, TID, event.currentTarget, {
+                        publicKey: PK,
+                    })
+                    .then(() => {
+                        showModal('succes', 'Mail enviado con éxito');
+                        setDataEntry({email:'', name: '', subject: '', message: ''})
+                    },
+                    (error) => {
+                        showModal('warning', 'No hemos podido enviar el email');
+                        console.log(error.text);
+                    },
+                );
+            }
+        }else{
+            showModal('warning', 'Por favor verifique los campos')
         }
     }
 

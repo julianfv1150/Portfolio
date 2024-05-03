@@ -40,7 +40,7 @@ const PlainText = ({title} : {title: string}) => {
         <div className={style.content}>
             <h2>{data?.section}</h2>
             <span>{showData?.[0]}</span>
-            <h6 className={style.showModal} onClick={()=>showModal('info', data?.description)}>{showData?.[1]}</h6>
+            <h4 className={style.showModal} onClick={()=>showModal('info', data?.description)}>{showData?.[1]}</h4>
             {data?.country 
                 ? <h4>🌎: {data?.country}</h4> 
                 : null}

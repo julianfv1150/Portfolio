@@ -1,8 +1,9 @@
+import Tags from "../components/tags/Tags";
 import { vpCalculator } from "./vpCalculator";
 
 export const trimmerText = (text : string | undefined, vpWidth : number) => {
-    const trimmedLink : string = ' Leer más';
-    const trimmedSend: Array<string> = [];
+    const trimmedLink = <Tags title='Leer más'/>;
+    const trimmedSend: Array<string | JSX.Element> = [];
     if(typeof text === 'string'){
         switch (vpCalculator(vpWidth)) {
             case 'SM':

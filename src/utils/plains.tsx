@@ -44,10 +44,6 @@ const plains = [
                 icon: icons.sql,
             },
             {
-                name: 'swagger',
-                icon: icons.swagger,
-            },
-            {
                 name: 'typescript',
                 icon: icons.typescript,
             },
@@ -77,6 +73,10 @@ const plains = [
             }
             /**
              * AGREGAR ACÄ PARA SACAR FRAMEWORKS
+                {
+                    name: 'swagger',
+                    icon: icons.swagger,
+                },
              **/         
         ]
     },
@@ -90,13 +90,45 @@ const plains = [
             //Como profesional, me distingo por mi capacidad para trabajar en equipo.
     },
     {
-        section:"mis proyectos",
+        section:"Mis proyectos",
         projects:[
             {
-                name:"Project's name",
-                techs:"techs",
-                description: "none",
-                link:"URL"
+                name:"FilmFlow",
+                video:"https://www.youtube.com/embed/eoxyfXsd6xE?si=8ooHsptmZR5B_wnl",
+                techs:["PostgreSQL", "Sequelize", "Node", "Express", "React", "Sass", "ChartJS", "SweetAlert"],
+                link:[
+                    {
+                        name: 'Deploy',
+                        url: 'https://filmflow.chekogarcia.com.mx/'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://github.com/lukeskip/filmFlow'
+                    }
+                ],
+                description: 
+                    `Este proyecto fue una experiencia grupal junto a seis colegas donde pudimos 
+                    replicar el trabajo diario de un desarrollador. Nos propusimos resolver el 
+                    problema de los productores independientes a la hora de compartir sus creaciones, 
+                    para lo cual creamos una plataforma donde podían subir su contenido y los 
+                    usuarios registrados “comprarlo” para verlo. 
+                    Tuvimos en cuenta distintos roles de usuarios, una pasarela de pago (Stripe), 
+                    filtros, subir contenido (Cloudinary), reseñas, un carrito de compras al mejor 
+                    estilo e-commerce, códigos de descuento y notificaciones por email.`
+            },
+            {
+                name:"PortFolio",
+                video:"URL",
+                techs:["Vite", "React", "GitHub Pages", "React", "Sass", "SweetAlert"],
+                link:[{url:"URL"}],
+                description: "none"
+            },
+            {
+                name:"HunterWork",
+                video:"URL",
+                techs:["string"],
+                link:[{url:"URL"}],
+                description: "none"
             }
         ]
     },

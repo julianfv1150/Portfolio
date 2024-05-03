@@ -1,0 +1,13 @@
+.info {
+    display: grid;
+    place-items: center;
+}
+
+.tagContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    place-items: center;
+    gap: .5em;
+}
+

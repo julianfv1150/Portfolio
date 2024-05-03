@@ -1,0 +1,42 @@
+@import '../../scss/variables.scss';
+
+.circle {
+    border: 1px solid $mainColor;
+    display: inline-block;
+    background-color: $mainColor;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: .375em
+}
+.circleSelected {
+    border: 1px solid $mainColor;
+    display: inline-block;
+    background-color: $secondColor;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    margin: .375em
+}
+
+.pagination {
+    border-radius: 25px;
+    background-color: rgba(95, 95, 95, .5);
+    margin-top: 2em;
+    padding: .3em;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+}
+
+.directions {
+    font-size: 1.5em;
+    transition: transform 200ms ease-in-out;
+}
+
+.directions:hover{
+    transform: scale(1.5);
+    color: $secondColor;
+    font-weight: bold;
+}

@@ -2,12 +2,13 @@ import plains from "../../utils/plains";
 import Slider from "../slider/Slider";
 
 const Projects = ({title} : {title : string}) => {
+
     const data = plains.find(elem => elem.section === title);
-    const projects = data?.projects
+    const listProjects = data?.projects;
     return (
         <>
             {
-                typeof(projects) !== 'undefined' ? <Slider projects={projects} autoplay={0} /> : null   
+                listProjects ? <Slider projects={listProjects} autoplay={0} /> : null   
             }
         </>
     )

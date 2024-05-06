@@ -50,7 +50,7 @@ const Slider = ({projects, autoplay} : {projects : project[], autoplay : number}
             <div className={style.pagination}>
                 <span className={style.directions} onClick={() => changeProject('prev')}>&#10092;</span>
                 {
-                    arrProjects.map((elem, index) => (
+                    arrProjects.map((_, index) => (
                         index === indexProjects ? <div className={style.circleSelected}></div> : <div className={style.circle}></div>
                     ))
                 }

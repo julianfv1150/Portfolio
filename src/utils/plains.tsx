@@ -117,17 +117,36 @@ const plains = [
                     estilo e-commerce, códigos de descuento y notificaciones por email.`
             },
             {
-                name:"PortFolio",
-                video:"URL",
-                techs:["Vite", "React", "GitHub Pages", "React", "Sass", "SweetAlert"],
-                link:[{url:"URL"}],
-                description: "none"
+                name:"GameData Hub",
+                video:"https://www.youtube.com/embed/ufZpwLdijEo?si=S3vSO8nIczOTOC7i",
+                techs:["Vite", "React", "Redux", "Expres", "", "Node", "Sequelize", "PostgreSQL"],
+                link:[
+                    {
+                        name: 'Deploy',
+                        url: 'https://videogames-gilt.vercel.app/'
+                    },
+                    {
+                        name: 'Github',
+                        url: 'https://github.com/julianfv1150/PI-videogames'
+                    }
+                ],
+                description: 
+                    `Este fue mi primer proyecto que hice sólo, usé varias tecnologías del stack que 
+                    nos enseñaban y si bien tiene a simple vista detalles que pulir, me resultó interesante
+                    dejarlo así y poder comparar dentro de un tiempo mi avance y mejora como desarrollador.`
             },
+            // {
+            //     name:"PortFolio",
+            //     video:"URL",
+            //     techs:["Vite", "React", "GitHub Pages", "React", "Sass", "SweetAlert"],
+            //     link:[{url:""}],
+            //     description: "none"
+            // },
             {
                 name:"HunterWork",
                 video:"URL",
                 techs:["string"],
-                link:[{url:"URL"}],
+                link:[{name: "inProgress", url:"URL"}],
                 description: "none"
             }
         ]

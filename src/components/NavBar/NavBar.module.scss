@@ -1,0 +1,16 @@
+.navBar {
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: right;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 2%, rgba(0,0,0,1) 64%);
+    font-weight: 700;
+    z-index: 1;
+    height: 75px;
+}
+
+.navBar > span {
+    margin-top: auto;
+}

@@ -1,42 +1,70 @@
 @import '../../scss/variables.scss';
 
+.slider {
+    padding: .375em;
+    margin: 0;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/portfolioV2.jpg');
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    flex-direction: column;
+    top: 75px
+}
+
 .circle {
+    display: absolute;
+    bottom: 1em;
     border: 1px solid $mainColor;
-    display: inline-block;
     background-color: $mainColor;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: .375em
+    width: .3em;
+    height: .3em;
 }
 .circleSelected {
+    display: absolute;
+    bottom: 1em;
     border: 1px solid $mainColor;
-    display: inline-block;
     background-color: $secondColor;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
-    margin: .375em
+    width: .3em;
+    height: .3em;
 }
 
 .pagination {
-    border-radius: 25px;
-    background-color: rgba(95, 95, 95, .5);
-    margin-top: 2em;
-    padding: .3em;
+    padding: 0;
+    margin: 0;
+    position: absolute;
     font-size: 1.5em;
-    display: flex;
-    flex-direction: row;
-    align-items:  center;
+    width: 85%;
+    justify-items:flex-end;
 }
-
-.directions {
-    font-size: 1.5em;
+.directLeft {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: -1em;
+    font-size: 2em;
+    text-shadow: 3px 2px gray;
     transition: transform 200ms ease-in-out;
 }
 
-.directions:hover{
+.directRight {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    right: -1em;
+    font-size: 2em;
+    text-shadow: 3px 2px gray;
+    transition: transform 200ms ease-in-out;
+}
+
+.directLeft:hover, .directRight:hover {
     transform: scale(1.5);
     color: $secondColor;
     font-weight: bold;
 }
+

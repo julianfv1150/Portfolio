@@ -2,31 +2,8 @@ import * as icons from '../assets/index';
 
 const plains = [
     {
-        section:"Sobre mí",
-        description: 
-            `¡Hola! Soy Julian Vega, un apasionado desarrollador full stack con 31 años de edad.
-            Recientemente he completado mi formación en SoyHenry, especializándome en tecnologías 
-            como JavaScript, PostgreSQL, React, HTML, CSS y Sequelize.\n
-            Mi misión es ofrecer soluciones innovadoras y eficientes a través del desarrollo de 
-            software. Me entusiasma la idea de contribuir al avance tecnológico y la integración 
-            continua de la sociedad con el mundo digital.\n       
-            ¡Conéctate conmigo y exploremos cómo podemos trabajar juntos para alcanzar nuestros 
-            objetivos!`
-            //Estoy emocionado por las oportunidades que el futuro tiene reservadas y espero poder 
-            //colaborar en proyectos que impulsen el cambio y mejoren la experiencia humana en el 
-            //ámbito tecnológico.
-    },
-    {
-        section:"Habilidades duras",
+        section:"hardSkills",
         techs:[
-            {
-                name: 'node',
-                icon: icons.nodejs,
-            },
-            {
-                name: 'express',
-                icon: icons.express,
-            },
             {
                 name: 'mongoDb',
                 icon: icons.mongodb,
@@ -36,16 +13,36 @@ const plains = [
                 icon: icons.mongoose,
             },
             {
-                name: 'sequelize',
-                icon: icons.sequelize,
-            },
-            {
                 name: 'sql',
                 icon: icons.sql,
             },
             {
+                name: 'sequelize',
+                icon: icons.sequelize,
+            },
+            {
+                name: 'node',
+                icon: icons.nodejs,
+            },
+            {
+                name: 'express',
+                icon: icons.express,
+            },
+            {
+                name: 'nest',
+                icon: icons.nest,
+            },
+            {
                 name: 'typescript',
                 icon: icons.typescript,
+            },
+            {
+                name: 'html5',
+                icon: icons.html5,
+            },
+            {
+                name: 'css3',
+                icon: icons.css3,
             },
             {
                 name: 'react',
@@ -56,12 +53,8 @@ const plains = [
                 icon: icons.vite,
             },
             {
-                name: 'css3',
-                icon: icons.css3,
-            },
-            {
-                name: 'html5',
-                icon: icons.html5,
+                name: 'swagger',
+                icon: icons.swagger,
             },
             {
                 name: 'trello',
@@ -70,7 +63,8 @@ const plains = [
             {
                 name: 'jira',
                 icon: icons.jira,
-            }
+            },
+            
             /**
              * AGREGAR ACÄ PARA SACAR FRAMEWORKS
                 {

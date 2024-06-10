@@ -1,33 +1,17 @@
-import { useState, useEffect } from "react";
-import DataProjects from "../dataProjects/DataProjects";
-import style from './Slider.module.scss'
+import { useState, useEffect, ReactElement } from "react";
+import styles from './Slider.module.scss'
+import About from "../about/About";
+import HardSkill from "../hardSkills/HardSkills";
 
-interface Link {
-    name: string,
-    url: string
-}
-
-interface project {
-    name: string,
-    video:string,
-    techs:string[],
-    description: string,
-    link: Link[]
-}
-
-const Slider = ({projects, autoplay} : {projects : project[], autoplay : number}) => {
+const Slider = ({ autoplay} : {autoplay : boolean}) => {
     const [indexProjects, setProjectIndex] = useState(0);
-    const [arrProjects, setArrProjects] = useState(projects);
+    const slideComp : ReactElement[] = [<About />, <HardSkill />];
     
     useEffect(() => {
-        setArrProjects(arrProjects)
-    }, [arrProjects]);
-    
-    useEffect(() => {
-        if(autoplay !== 0){
+        if(autoplay){
         const interval = setInterval(() => {
             changeProject('next')
-        }, 1000*autoplay)
+        }, 15000)
         return () => clearInterval(interval);
     }})
     
@@ -35,29 +19,32 @@ const Slider = ({projects, autoplay} : {projects : project[], autoplay : number}
         if(direct === 'prev'){
             return indexProjects > 0 
                 ? setProjectIndex(indexProjects-1) 
-                : setProjectIndex(arrProjects.length-1);
+                : setProjectIndex(slideComp.length-1);
         }
         else{
-            return indexProjects < arrProjects.length-1 
+            return indexProjects < slideComp.length-1 
                 ? setProjectIndex(indexProjects+1)
                 : setProjectIndex(0);
         }
     }
 
     return (
-        <>  
-            <DataProjects project={arrProjects[indexProjects]}/>
-            <div className={style.pagination}>
-                <span className={style.directions} onClick={() => changeProject('prev')}>&#10092;</span>
+        <div className={styles.slider}>
+            <div className={styles.pagination}>
+                <span className={styles.directLeft} onClick={() => changeProject('prev')}>&#10092;</span>
+                <span className={styles.directRight} onClick={() => changeProject('prev')}>&#10093;</span>
+            </div>
+            <div className={styles.sliderItem}>
+                {slideComp[indexProjects]}
+            </div>
+            {/* <div>
                 {
-                    arrProjects.map((_, index) => (
-                        index === indexProjects ? <div className={style.circleSelected}></div> : <div className={style.circle}></div>
+                    slideComp.map((_, index) => (
+                        index === indexProjects ? <div className={styles.circleSelected}></div> : <div className={styles.circle}></div>
                     ))
                 }
-                <span className={style.directions} onClick={() => changeProject('next')}>&#10093;</span>
-            </div>
-            
-        </>
+            </div> */}
+        </div>
     )
 }
 

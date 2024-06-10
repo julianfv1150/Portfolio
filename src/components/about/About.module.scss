@@ -1,0 +1,43 @@
+.about {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.img {
+    display: inline;
+    padding: 0;
+    margin: 0;
+    max-width: 50vw;
+}
+.contText {
+    padding: 0;
+    border-radius: 25px;
+    max-width: 50vw;
+}
+
+.contText > p {
+    margin: .375rem;
+    padding: .375;
+    width: 50vw;
+    color: rgb(235, 235, 235);
+    text-shadow: 2px 2px 5px black;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-align: left;
+}
+
+.contText > h2 {
+    text-shadow: 3px 2px gray;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.contText > h2{
+    display: inline;
+}

@@ -2,31 +2,8 @@ import * as icons from '../assets/index';
 
 const plains = [
     {
-        section:"Sobre mí",
-        description: 
-            `¡Hola! Soy Julian Vega, un apasionado desarrollador full stack con 31 años de edad.
-            Recientemente he completado mi formación en SoyHenry, especializándome en tecnologías 
-            como JavaScript, PostgreSQL, React, HTML, CSS y Sequelize.\n
-            Mi misión es ofrecer soluciones innovadoras y eficientes a través del desarrollo de 
-            software. Me entusiasma la idea de contribuir al avance tecnológico y la integración 
-            continua de la sociedad con el mundo digital.\n       
-            ¡Conéctate conmigo y exploremos cómo podemos trabajar juntos para alcanzar nuestros 
-            objetivos!`
-            //Estoy emocionado por las oportunidades que el futuro tiene reservadas y espero poder 
-            //colaborar en proyectos que impulsen el cambio y mejoren la experiencia humana en el 
-            //ámbito tecnológico.
-    },
-    {
-        section:"Habilidades duras",
+        section:"hardSkills",
         techs:[
-            {
-                name: 'node',
-                icon: icons.nodejs,
-            },
-            {
-                name: 'express',
-                icon: icons.express,
-            },
             {
                 name: 'mongoDb',
                 icon: icons.mongodb,
@@ -36,16 +13,36 @@ const plains = [
                 icon: icons.mongoose,
             },
             {
-                name: 'sequelize',
-                icon: icons.sequelize,
-            },
-            {
                 name: 'sql',
                 icon: icons.sql,
             },
             {
+                name: 'sequelize',
+                icon: icons.sequelize,
+            },
+            {
+                name: 'node',
+                icon: icons.nodejs,
+            },
+            {
+                name: 'express',
+                icon: icons.express,
+            },
+            {
+                name: 'nest',
+                icon: icons.nest,
+            },
+            {
                 name: 'typescript',
                 icon: icons.typescript,
+            },
+            {
+                name: 'html5',
+                icon: icons.html5,
+            },
+            {
+                name: 'css3',
+                icon: icons.css3,
             },
             {
                 name: 'react',
@@ -56,12 +53,8 @@ const plains = [
                 icon: icons.vite,
             },
             {
-                name: 'css3',
-                icon: icons.css3,
-            },
-            {
-                name: 'html5',
-                icon: icons.html5,
+                name: 'swagger',
+                icon: icons.swagger,
             },
             {
                 name: 'trello',
@@ -70,7 +63,8 @@ const plains = [
             {
                 name: 'jira',
                 icon: icons.jira,
-            }
+            },
+            
             /**
              * AGREGAR ACÄ PARA SACAR FRAMEWORKS
                 {
@@ -81,40 +75,55 @@ const plains = [
         ]
     },
     {
-        section:"Habilidades blandas",
-        description:
-            `Soy capaz de entender las necesidades de los demás y encontrar soluciones 
-            colaborativas. Mi capacidad para adaptarme a nuevos desafíos me permiten 
-            enfrentar cualquier situación con confianza. Además, mi pasión por el 
-            aprendizaje continuo me ayudan a mantenerme al día.`,
-            //Como profesional, me distingo por mi capacidad para trabajar en equipo.
-    },
-    {
         section:"Mis proyectos",
         projects:[
+            {
+                name: "Data's Burger",
+                video: null,
+                techs: ["MongoDB", 'Mongoose', 'NestJS', 'React'],
+                link:[
+                    {
+                        name:'Deploy',
+                        url: "https://datas-burguers-front.vercel.app/"
+                    }
+                ],
+                description:
+                    `Este es un proyecto real en el que estoy trabajando actualmente para 
+                    una hamburguesería en el sur del país donde el objetivo es crear crear 
+                    un simil e-commerce así los clientes pueden realizar sus pedidos, 
+                    tambíen se le agregó un dashboard de admin para poder ver los pedidos 
+                    que van ingresando y los datos del cliente para realizar el envío.`,
+                functions: [
+                    '✅ Modelado DB', 
+                    '✅ Levantar y conectar DB', 
+                    '✅ Creación de módulos, entidades, controllers y services',
+                    '✅ Creación PIPEs, Guards y autorización con token de JWT',
+                    '✅ Creación de login con validaciones y dashboard de admin',
+                    '✅ Protección de rutas'
+                ]
+            },
             {
                 name:"FilmFlow",
                 video:"https://www.youtube.com/embed/eoxyfXsd6xE?si=8ooHsptmZR5B_wnl",
                 techs:["PostgreSQL", "Sequelize", "Node", "Express", "React", "Sass", "ChartJS", "SweetAlert"],
                 link:[
                     {
-                        name: 'Deploy',
-                        url: 'https://filmflow.chekogarcia.com.mx/'
-                    },
-                    {
                         name: 'Github',
                         url: 'https://github.com/lukeskip/filmFlow'
                     }
                 ],
                 description: 
-                    `Este proyecto fue una experiencia grupal junto a seis colegas donde pudimos 
-                    replicar el trabajo diario de un desarrollador. Nos propusimos resolver el 
-                    problema de los productores independientes a la hora de compartir sus creaciones, 
-                    para lo cual creamos una plataforma donde podían subir su contenido y los 
-                    usuarios registrados “comprarlo” para verlo. 
-                    Tuvimos en cuenta distintos roles de usuarios, una pasarela de pago (Stripe), 
-                    filtros, subir contenido (Cloudinary), reseñas, un carrito de compras al mejor 
-                    estilo e-commerce, códigos de descuento y notificaciones por email.`
+                    `En este proyecto nos enfocamos en el problema de los productores independientes a la 
+                    hora de compartir sus obras, creando una plataforma donde podían subir su contenido 
+                    para que los usuarios lo vean. El sitio cuenta con roles de usuarios, una pasarela de 
+                    pago, filtros, reseñas, carrito de compras, códigos de descuento y envío de notificaciones.`,
+                functions: [
+                    '✅ Crear componentes sliders y carrouseles', 
+                    '✅ Crear vista de filtros', 
+                    '✅ Crear dashboard de admin',
+                    '✅ Crear gráficos en el dashboard',
+                    '✅ Protección de rutas'
+                ]
             },
             {
                 name:"GameData Hub",
@@ -132,23 +141,24 @@ const plains = [
                 ],
                 description: 
                     `Este fue mi primer proyecto que hice sólo, usé varias tecnologías del stack que 
-                    nos enseñaban y si bien tiene a simple vista detalles que pulir, me resultó interesante
-                    dejarlo así y poder comparar dentro de un tiempo mi avance y mejora como desarrollador.`
+                    aprendí y si bien tiene a simple vista detalles que pulir, me resultó interesante
+                    poder comparar dentro de un tiempo mi avance y mejora como desarrollador.`,
+                functions: [
+                    '✅ Crear carrousel de películas', 
+                    '✅ Conexión con DB y API externa', 
+                    '✅ Creación de entidades, rutas y controllers', 
+                    '✅ Crear vistas de login, filtros y formularios',
+                    '✅ Estilos',
+                    '✅ Deploy'
+                ]
             },
             // {
-            //     name:"PortFolio",
+            //     name:"HunterWork",
             //     video:"URL",
-            //     techs:["Vite", "React", "GitHub Pages", "React", "Sass", "SweetAlert"],
-            //     link:[{url:""}],
+            //     techs:["string"],
+            //     link:[{name: "inProgress", url:"URL"}],
             //     description: "none"
-            // },
-            {
-                name:"HunterWork",
-                video:"URL",
-                techs:["string"],
-                link:[{name: "inProgress", url:"URL"}],
-                description: "none"
-            }
+            // }
         ]
     },
     {

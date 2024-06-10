@@ -1,0 +1,15 @@
+.title {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.contact {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    text-shadow: 2px 2px 5px black;
+    justify-content: space-evenly;
+    color: black;
+}

@@ -3,7 +3,8 @@
 :root {
   font-family: $mainFont;
   font-synthesis: none;
-  height: 100%;
+  padding: 0;
+  margin: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -11,11 +12,6 @@
 
 body {
   padding: 0;
-  height: 100%;
-  width: 80%;
+  margin: 0;
   box-sizing: border-box;
-  background-image: url(./assets/fondosRedes.jpg);
-  background-repeat:repeat;
-  background-size:cover;
-  background-position: center center;
 }

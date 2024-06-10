@@ -2,7 +2,7 @@ import { useState } from "react"
 import emailjs from '@emailjs/browser'
 import Validates from "../../utils/validates/validates"
 import { showModal } from "../../utils/showModal"
-import style from './FormComment.module.scss'
+import styles from './FormComment.module.scss'
 
 const FormComment = () => {
 
@@ -70,11 +70,10 @@ const FormComment = () => {
     }
 
     return(
-        <>
         <form onSubmit={handleSubmit}>
-            <div className='formItems'>
-                <label>Email: </label>
+            <div className={styles.formItems}>
                 <div>
+                    <label>Email:</label>
                     <input
                         type='text'
                         name='email'
@@ -83,10 +82,10 @@ const FormComment = () => {
                         autoComplete="off"
                         onChange={handleChange}
                     />
-                    <p className={errorData.email === 'OK' ? style.succesEntry : style.errorEntry}>{errorData.email}</p>
+                    <p className={errorData.email === 'OK' ? styles.succesEntry : styles.errorEntry}>{errorData.email}</p>
                 </div>
-                <label>Nombre: </label>
                 <div>
+                    <label>Nombre:</label>
                     <input
                         type='text'
                         name='name'
@@ -95,10 +94,10 @@ const FormComment = () => {
                         autoComplete="off"
                         onChange={handleChange}
                     />
-                    <p className={errorData.name === 'OK' ? style.succesEntry : style.errorEntry}>{errorData.name}</p>
+                    <p className={errorData.name === 'OK' ? styles.succesEntry : styles.errorEntry}>{errorData.name}</p>
                 </div>
-                <label>Asunto: </label>
                 <div>
+                    <label>Asunto:</label>
                     <input
                         type='text'
                         name='subject'
@@ -107,27 +106,25 @@ const FormComment = () => {
                         autoComplete="off"
                         onChange={handleChange}
                     />
-                    <p className={errorData.subject === 'OK' ? style.succesEntry : style.errorEntry}>{errorData.subject}</p>
+                    <p className={errorData.subject === 'OK' ? styles.succesEntry : styles.errorEntry}>{errorData.subject}</p>
                 </div>
-                <label>Mensaje: </label>
-                <div>
+                <div className={styles.center}>
+                    <label>Mensaje:</label>
                     <textarea
                         name='message'
                         value={dataEntry.message}
-                        placeholder="Podrías buscar backgrounds que generen más contraste"
+                        placeholder="Coméntame que piensas"
                         autoComplete="off"
                         onChange={handleChange}
                     ></textarea>
-                    <p className={errorData.message === 'OK' ? style.succesEntry : style.errorEntry}>{errorData.message}</p>
+                    <p className={errorData.message === 'OK' ? styles.succesEntry : styles.errorEntry}>{errorData.message}</p>
                 </div>
             </div>
-                <div className={style.btnOrder}>
-                    {/* <input type='button' name='preview' value='Previsualizar' onClick={handleClick} /> */}
+                <div className={styles.btnOrder}>
                     <input type='button' name='clean' value='Limpiar' onClick={handleClick} />
                     <input type='submit' name='send' value='Enviar' />
                 </div>
         </form>
-        </>
     )
 }
 

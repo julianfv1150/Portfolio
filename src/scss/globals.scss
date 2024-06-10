@@ -1,107 +1,39 @@
 @import 'variables.scss';
 @import 'sweetalert2/src/sweetalert2.scss';
 
-p{
-    font-size: .8em;
-    color: $mainColor;
-    line-height: 1.5em;
-    text-align: justify
-}
-
 h2{
     color: $secondColor;
 }
-li{
-    font-size: .8em;
-}
+
 img{
-    max-width: 100%;
-    padding: .5em;
-}
-
-@mixin wrapper{
-    background-color: $wrapperColor;
-    border-radius: 25px;
-    padding: 1em 1em;
-}
-
-@mixin shadows{
-    -webkit-box-shadow: 1px 2px 4px rgba(127,255,212,1);
-    -moz-box-shadow: 1px 2px 4px rgba(127,255,212,1);
-    box-shadow: 1px 2px 4px rgba(127,255,212,1);
-}
-.container{
-    @include wrapper;
-    max-width: $componentWidth;
-    align-items: center;
-    justify-items: center
-}
-
-.swal2-modal{
-    color:$mainColor;
-    border-radius: 25px;
-    background-color: rgb(000, 000, 000);
-}
-.colored-toast{
-    border-radius: 25px;
-    color: $secondColor;
-    background-color: rgb(000, 000, 000)!important;
-}
-
-.swal2-html-container {
-    text-align: justify !important;
-    background-color: rgb(000, 000, 000);
-}
-
-.showIcons{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items:flex-end ;
-    height: 75%;
-    margin: auto;
-}
-
-a{
-    text-decoration: none;
-    color: $mainColor;
-    cursor: pointer;
-}
-a:hover{
-    color: $secondColor
-}
-
-.formItems{
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    margin: 0 auto;
-    padding: 1em;
-    align-items: center;
-    justify-items: left;
-    label{
-        justify-content: right;
-    }
+    max-width: 300px;
 }
 
 textarea,
 input[type=text], 
 [type=button], 
 [type=submit]{
-    padding: 1em;
-    margin: 1em;
+    padding: .5rem;
+    margin: 1rem;
+    margin-bottom: .375rem;
     border-radius: 25px;
-    color: $secondColor;
-    background-color: black;
+    outline: none;
+    border: none;
+    color: black;
+    font-weight: 700;
+    background: linear-gradient(165deg, rgba(165, 165, 165, 0.5) 10%, rgba(0,0,0,.5) 80%);
 }
 
 input[type=button], [type=submit]{
-    color: black;
     background-color: $secondColor;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
     border-color: none;
+    border: none;
+    outline: none;
 }
 input[type=button]:hover,
 input[type=submit]:hover{
-    @include shadows;
+    box-shadow: 2px 2px 20px rgba(127,255,212,1);
 }
 
 input[type=text],
@@ -119,4 +51,32 @@ iframe{
     max-height: 400px;
     min-width: 250px;
     max-width: 800px;
+}
+
+a{
+    text-decoration: none;
+    color: $mainColor;
+    cursor: pointer;
+    padding: 1rem;    
+}
+
+a:hover{
+    color: $secondColor
+}
+
+
+.swal2-modal{
+    color:$mainColor;
+    border-radius: 25px;
+    background-color: rgb(000, 000, 000);
+}
+.colored-toast{
+    border-radius: 25px;
+    color: $secondColor;
+    background-color: rgb(000, 000, 000)!important;
+}
+
+.swal2-html-container {
+    text-align: justify !important;
+    background-color: rgb(000, 000, 000);
 }

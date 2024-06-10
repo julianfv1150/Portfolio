@@ -1,8 +1,8 @@
 @import '../../scss/variables.scss';
 
 .slider {
-    padding: .375em;
     margin: 0;
+    padding: .375rem;
     display: flex;
     position: relative;
     align-items: center;
@@ -10,9 +10,8 @@
     background-image: url('../../assets/portfolioV2.jpg');
     background-position: center;
     background-size: cover;
-    min-height: 500px;
+    height: 90vh;
     flex-direction: column;
-    top: 75px
 }
 
 .circle {
@@ -38,7 +37,8 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    font-size: 1.5em;
+    font-size: 4rem;
+    text-shadow: 3px 2px gray;
     width: 85%;
     justify-items:flex-end;
 }
@@ -46,20 +46,18 @@
     padding: 0;
     margin: 0;
     position: absolute;
-    left: -1em;
-    font-size: 2em;
-    text-shadow: 3px 2px gray;
+    left: -2vw;
     transition: transform 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .directRight {
     padding: 0;
     margin: 0;
     position: absolute;
-    right: -1em;
-    font-size: 2em;
-    text-shadow: 3px 2px gray;
+    right: -2vw;
     transition: transform 200ms ease-in-out;
+    cursor: pointer;
 }
 
 .directLeft:hover, .directRight:hover {
@@ -68,3 +66,15 @@
     font-weight: bold;
 }
 
+.sliderItem {
+    margin: 0;
+    padding: 0;
+    width: 80vw;
+    animation-name: changeItem;
+    animation-duration: 5s;
+}
+
+@keyframes changeItem {
+    0%   {visibility: hidden;}
+    25%  {visibility: visible;}
+}

@@ -3,7 +3,6 @@ import styles from './Slider.module.scss'
 import About from "../about/About";
 import HardSkill from "../hardSkills/HardSkills";
 
-
 const Slider = ({ autoplay} : {autoplay : boolean}) => {
     const [indexProjects, setProjectIndex] = useState(0);
     const slideComp : ReactElement[] = [<About />, <HardSkill />];
@@ -30,19 +29,21 @@ const Slider = ({ autoplay} : {autoplay : boolean}) => {
     }
 
     return (
-        <div id='cp' className={styles.slider}>
+        <div className={styles.slider}>
             <div className={styles.pagination}>
                 <span className={styles.directLeft} onClick={() => changeProject('prev')}>&#10092;</span>
                 <span className={styles.directRight} onClick={() => changeProject('prev')}>&#10093;</span>
             </div>
-            {slideComp[indexProjects]}
-            <div>
+            <div className={styles.sliderItem}>
+                {slideComp[indexProjects]}
+            </div>
+            {/* <div>
                 {
                     slideComp.map((_, index) => (
                         index === indexProjects ? <div className={styles.circleSelected}></div> : <div className={styles.circle}></div>
                     ))
                 }
-            </div>
+            </div> */}
         </div>
     )
 }

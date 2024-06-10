@@ -1,0 +1,52 @@
+.exp {
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    background: linear-gradient(135deg, rgba(119, 119, 119, 0.1) 15%, rgba(0,0,0,.7) 80%);
+    text-shadow: 2px 2px 5px black;
+    justify-content: space-evenly;
+}
+
+.exp > div {
+    margin: auto;
+}
+
+.exp > div > ul > li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1rem;
+}
+
+li > span {
+    font-size: .7rem;
+    padding: 0;
+    color: black;
+}
+
+.exp > h2 {
+    font-size: 2rem;
+}
+
+.exp > p {
+    text-align: left;
+    padding: .375rem;
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
+.title {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}
+
+.title > img {
+    padding: 0;
+    margin: 0;
+}
+
+.contText {
+    max-width: 500px;
+}

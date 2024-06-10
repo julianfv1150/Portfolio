@@ -2,15 +2,15 @@
     margin: 0;
     padding: 0;
     display: flex;
-    width: 90%;
+    width: 80vw;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .contText {
     width: 50%;
-    padding: 1em;
-    max-width: 350px;
+    padding: 1rem;
+    max-width: 50vw;
     border-radius: 10px;
     align-items: center;
 }
@@ -20,20 +20,32 @@
     text-shadow: 2px 2px 5px black;
     text-align: left;
     font-weight: 700;
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
 
 .contText > h2 {
     text-shadow: 3px 2px gray;
     display: inline-block;
     font-weight: 700;
-    font-size: 2.7em;
+    font-size: 2rem;
 }
 
 .contIcon {
+    margin: 0;
+    padding: 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: auto;
     border-radius: 25px;
-    max-width: 400px;
+    max-width: 60vw;
+}
+
+.contIcon > img {
+    margin: .375rem;
+}
+
+@media (max-width: 800px) {
+    .hSkills {
+        flex-flow: column wrap;
+        justify-content: center;
+    }
 }

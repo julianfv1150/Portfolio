@@ -10,7 +10,6 @@ const HardSkill = () => {
             <div className={styles.contText}>
                 <h2>TECNOLOGÍAS</h2>
                 <p>🧐 Siempre busco estar al pendiente de las últimas actualizaciones en tecnología.</p>
-                {/* <p>A ser autodidacta me gusta aprender lenguajes y frameworks constantemente.</p> */}
             </div>
             <div className={styles.contIcon}>
             {data?.techs?.map(elem => 

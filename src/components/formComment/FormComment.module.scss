@@ -1,11 +1,31 @@
 .errorEntry{
     visibility: visible;
+    text-align: center;
+    font-size: .5rem;
     color: red;
+    margin-top: 0px;
 }
 .succesEntry{
     visibility: hidden;
+    text-align: center;
+    font-size: .5rem;
 }
 
 .btnOrder{
     margin-left: 25%;
+}
+
+.formItems{
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    justify-content: flex-end;
+    max-width: 350px;
+}
+
+.center{
+    label {
+        position: relative;
+        top: -80px;
+    }
 }

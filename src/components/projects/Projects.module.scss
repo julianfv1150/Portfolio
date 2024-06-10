@@ -1,0 +1,63 @@
+.projects {
+    margin: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.cards {
+    color: black;
+    padding: .5rem;
+    margin: .5rem;
+    max-width: 320px;
+    text-wrap: wrap;
+    align-items: center;
+    border-radius: 25px;
+    text-shadow: 2px 2px 5px black;
+    background: linear-gradient(165deg, rgba(165, 165, 165, 0.5) 10%, rgba(0,0,0,.5) 80%);
+}
+
+.highlight {
+    margin: .375rem;
+    padding: .375rem;
+    border-radius: 25px;
+}
+
+.cards > a {
+    padding: auto;
+    margin: auto;
+    display: block;
+}
+
+.cards > p {
+    padding: .5rem;
+    font-size: 1rem;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.cards > ul > li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-size: 1rem;
+    text-align: left;
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+.cards > span {
+    color: white;
+    padding: 0;
+    text-align: left;
+}
+
+.cards > h2 {
+    font-size: 2rem;
+}
+
+.title {
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
+}

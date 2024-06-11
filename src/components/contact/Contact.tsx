@@ -5,6 +5,7 @@ import styles from "./Contact.module.scss"
 const Contact = () => {
 
     return (<>
+            <br /><br /><br /><br />
             <h2 className={styles.title}>👇Dejame un mensaje</h2>
             <div className={styles.contact}>
                 <FormComment />

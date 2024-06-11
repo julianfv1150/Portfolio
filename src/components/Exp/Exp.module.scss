@@ -1,5 +1,6 @@
 .exp {
     margin: 0;
+    padding: 2rem;
     display: flex;
     flex-flow: row wrap;
     background: linear-gradient(135deg, rgba(119, 119, 119, 0.1) 15%, rgba(0,0,0,.7) 80%);
@@ -40,6 +41,7 @@ li > span {
     padding: 1rem;
     font-size: 3rem;
     text-shadow: 2px 2px 5px black;
+    margin-bottom: 0;
 }
 
 .title > img {
@@ -48,5 +50,6 @@ li > span {
 }
 
 .contText {
+    text-align: left;
     max-width: 500px;
 }

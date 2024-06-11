@@ -80,7 +80,7 @@ const plains = [
             {
                 name: "Data's Burger",
                 video: null,
-                techs: ["MongoDB", 'Mongoose', 'NestJS', 'React'],
+                techs: ["MongoDB", 'Mongoose', 'NestJS', 'React', 'Typescript'],
                 link:[
                     {
                         name:'Deploy',
@@ -88,11 +88,12 @@ const plains = [
                     }
                 ],
                 description:
-                    `Este es un proyecto real en el que estoy trabajando actualmente para 
-                    una hamburguesería en el sur del país donde el objetivo es crear crear 
-                    un simil e-commerce así los clientes pueden realizar sus pedidos, 
-                    tambíen se le agregó un dashboard de admin para poder ver los pedidos 
-                    que van ingresando y los datos del cliente para realizar el envío.`,
+                    `Este es un proyecto real en el que estoy desarrollando actualmente para una 
+                    hamburguesería en el sur del país donde el objetivo es crear un e-commerce así 
+                    los clientes pueden realizar sus pedidos, tambíen se le cuenta con un dashboard 
+                    de admin para poder ver los pedidos que van ingresando y los datos del cliente 
+                    para realizar el envío. En este momento nos encontramos en el primer sprint 
+                    preparándonos para presentar el MVP.`,
                 functions: [
                     '✅ Modelado DB', 
                     '✅ Levantar y conectar DB', 
